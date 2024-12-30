@@ -108,6 +108,8 @@ html::-webkit-scrollbar-thumb{
     }
 }
 .main_content{
+    margin-top: 10rem;
+    margin-bottom: 7rem;
     padding: 5rem 9% 5rem;
     display: flex;
     justify-content: center;
@@ -278,7 +280,7 @@ span{
     flex-direction: column;
     align-items: center;
     padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
 .services h2{
     font-size: 5.5rem;
@@ -295,7 +297,7 @@ span{
 .box{
     padding: 2rem;
     border-radius: 1.5rem;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     height: 270px;
     filter: opacity(0.9);
     cursor: pointer;
@@ -305,7 +307,10 @@ span{
     transform: scale(1.02);
     filter: opacity(1);
     box-shadow: 0 0 25px var(--main-color);
-    border: 3px solid var(--main-color);
+    border-top: 6px solid var(--main-color);
+    border-bottom: 6px solid var(--main-color);
+    border-left: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
     background-color: var(--second-bg-color);
 
 }
@@ -335,12 +340,59 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+}
+.skills h2{
+    font-size: 5.5rem;
+    font-weight: 700;
+    cursor: pointer;
 }
 .skill_container{
+    margin-top: 2rem;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    background-color: #7c4bb7a8;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 .skills img{
-    width: 10vh;
+    height: 10vh;
+    position: relative;
+}
+.skill{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    padding: 2.1rem 5rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    height: 150px;
+}
+.skill:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #8e6fb5;
+}
+.skill span{
+    font-size: 1.8rem;
+    font-weight: 480;
+}
+@media (max-width:900px){
+    .skill_container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .skill{
+        padding: 2rem 3rem;
+    }
+}
+@media (max-width:600px){
+    .skill_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
