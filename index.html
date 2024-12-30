@@ -10,9 +10,9 @@
 <body>
     <header class="nav">
         <a class="left_nav" href="index.html">AK</a>
-        <i class="fa-solid fa-bars" class="menu_icon"></i>
+        <i class="fa-solid fa-bars menu_icon" onclick="change()"></i>
         <nav class="right_nav">
-            <a href="#home" class="active">Home</a>
+            <a href="#home" >Home</a>
             <a href="#services">Services</a>
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
@@ -123,21 +123,85 @@
         </div>
     </div>
     <div class="education" id="education">
-        <h2>My <span>Education</span></h2>
+        <h2 class="edutitle">My <span>Education</span></h2>
         <div class="timeline">
-            
+            <div class="educontainer righttl">
+                <div class="educontent">
+                    <div class="tag">
+                        <h2>High School</h2>
+                    </div>
+                    <div class="edudesc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatum!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="educontainer lefttl">
+                <div class="educontent">
+                    <div class="tag">
+                        <h2>Secondary School</h2>
+                    </div>
+                    <div class="edudesc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatum!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="educontainer righttl">
+                <div class="educontent">
+                    <div class="tag">
+                        <h2>University</h2>
+                    </div>
+                    <div class="edudesc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatum!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="educontainer lefttl">
+                <div class="educontent">
+                    <div class="tag">
+                        <h2>Internship</h2>
+                    </div>
+                    <div class="edudesc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatum!</p>
+                    </div>
+                </div>
+            </div>
         </div>
         
 
     </div>
-    <div class="contact">
-        <div class="contact_title">
-            Contact
-        </div>
+    <div class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="">
+            <div class="input_box">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Phone Number"  required>
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Submit" class="submit">
+        </form>
     </div>
     <div class="footer">
-
+        <div class="flink">
+            <a href="https://www.linkedin.com/in/aditya-kumar-6a97232b7/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Adityakk0469"><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_aditya0469/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="other">
+            <a href="">FAQ</a>
+            <a href="#services">Services</a>
+            <a href="#home">About</a>
+            <a href="#contact">Contact</a>
+            <a href="">Privacy Policies</a>
+        </div>
+        <div class="cr">
+            <p>&copy; 2024 Aditya Kumar</p>
+        </div>
     </div>
+
+
     <script src="script.js"></script>
 </body>
 </html>
